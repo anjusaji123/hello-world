@@ -13,10 +13,7 @@ class client {
 	String line=br.readLine();
 	PrintWriter out = new PrintWriter(skt.getOutputStream(), true);
 	 out.print(line);
-
-
-
-         in.close();
+	 in.close();
       }
       catch(Exception e) {
          System.out.print("Whoops! It didn't work!\n");
